@@ -11,11 +11,9 @@ document.onkeyup = function(event) {
 	var computerGuess = options[Math.floor(Math.random() * options.length)];
 
 if (userGuess === computerGuess) {
-	alert("Correct!");
 	win++;
 	totalGuesses=9;
 } else {
-	alert("Wrong!");
 	totalGuesses--;
 	guessList.push(userGuess);
 	if (totalGuesses === 0) {
