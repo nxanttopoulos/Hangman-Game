@@ -13,11 +13,11 @@ document.onkeyup = function(event) {
 if (userGuess === computerGuess) {
 	win++;
 	totalGuesses=9;
+	guessList=[];
 } else {
 	totalGuesses--;
 	guessList.push(userGuess);
 	if (totalGuesses === 0) {
-		alert("You Couldn't Get it!");
 		losses++;
 		totalGuesses=9;
 		guessList=[];
